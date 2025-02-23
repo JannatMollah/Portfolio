@@ -121,3 +121,57 @@ arrowLeft.addEventListener('click', () => {
 
     activePortfolio();
 });
+
+// Contact Form Submission
+const form = document.querySelector('form');
+const alertSuccess = document.querySelector('.alert.success');
+const alertError = document.querySelector('.alert.error');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault(); // Prevent default form submission
+
+  // Show loading state
+  const submitBtn = form.querySelector('button[type="submit"]');
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Sending...';
+
+  try {
+    // Get form data
+    const formData = new FormData(form);
+
+    // Send form data to Formspree
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    // Handle response
+    if (response.ok) {
+      // Show success message
+      alertSuccess.style.display = 'block';
+      form.reset(); // Clear form fields
+      
+      // Hide success message after 5 seconds
+      setTimeout(() => {
+        alertSuccess.style.display = 'none';
+      }, 5000);
+    } else {
+      throw new Error('Form submission failed');
+    }
+  } catch (error) {
+    // Show error message
+    alertError.style.display = 'block';
+    
+    // Hide error message after 5 seconds
+    setTimeout(() => {
+      alertError.style.display = 'none';
+    }, 5000);
+  } finally {
+    // Reset button state
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Send Message';
+  }
+});

@@ -886,3 +886,39 @@ section.active {
         font-size: 3.5rem;
     }
 }
+
+/* Add to style.css */
+.alert-box {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10000;
+    max-width: 300px;
+  }
+  
+  .alert {
+    padding: 15px 25px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: none;
+    animation: slideIn 0.3s ease-out;
+  }
+  
+  .success {
+    background: #4CAF50;
+    color: white;
+  }
+  
+  .error {
+    background: #f44336;
+    color: white;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
