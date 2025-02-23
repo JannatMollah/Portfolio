@@ -55,12 +55,8 @@ header.active {
 
 .logo {
     font-size: 3rem;
-    color: var(--white-color);
-    font-weight: 700;
-}
-
-.logo:hover {
     color: var(--main-color);
+    font-weight: 700;
 }
 
 nav {
