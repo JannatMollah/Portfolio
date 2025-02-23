@@ -8,6 +8,7 @@ menuIcon.addEventListener('click', () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 });
+
 const activePage = () => {
     const header = document.querySelector('header');
     const barsBox = document.querySelector('.bars-box');
