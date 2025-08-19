@@ -1,0 +1,59 @@
+{
+  "experience": [
+    {
+      "role": "Front-End Developer",
+      "company": "TechCorp Ltd",
+      "start": "Jan 2022",
+      "end": "Present",
+      "description": "Building responsive web apps using HTML, CSS, JavaScript, and modern frameworks."
+    },
+    {
+      "role": "Web Developer Intern",
+      "company": "Creative Agency",
+      "start": "Jun 2021",
+      "end": "Dec 2021",
+      "description": "Assisted in developing dynamic landing pages and optimizing cross-browser compatibility."
+    },
+    {
+      "role": "UI/UX Designer",
+      "company": "Design Studio",
+      "start": "Mar 2020",
+      "end": "May 2021",
+      "description": "Created user-centered designs for web and mobile applications, focusing on usability and accessibility."
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. in Computer Science",
+      "institution": "Dhaka University",
+      "year": "2021"
+    },
+    {
+      "degree": "Higher Secondary Certificate",
+      "institution": "City College",
+      "year": "2017"
+    },
+    {
+      "degree": "Web Development Bootcamp",
+      "institution": "Coding Academy",
+      "year": "2020"
+    }
+  ],
+  "skills": [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "React",
+    "Vue.js",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Git",
+    "Responsive Design",
+    "Tailwind CSS",
+    "Python",
+    "UI/UX Design",
+    "Figma",
+    "AWS"
+  ]
+}

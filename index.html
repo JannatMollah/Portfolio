@@ -15,32 +15,22 @@
 <body>
 
     <!-- header -->
-    <header class="active">
+    <header>
         <a href="#" class="logo">JannatMollah.</a>
 
         <i class='bx bx-menu' id="menu-icon"></i>
 
         <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Resume</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#resume" class="nav-link">Resume</a>
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </nav>
     </header>
 
-    <!-- bars background -->
-    <div class="bars-box active">
-        <div class="bar" style="--i:6"></div>
-        <div class="bar" style="--i:5"></div>
-        <div class="bar" style="--i:4"></div>
-        <div class="bar" style="--i:3"></div>
-        <div class="bar" style="--i:2"></div>
-        <div class="bar" style="--i:1"></div>
-    </div>
-
     <!-- home section -->
-    <section class="home active">
+    <section id="home" class="home">
         <div class="home-detail">
             <h1>Jannat Ul Ferdous Mollah</h1>
             <h2>I'm a
@@ -50,12 +40,10 @@
                 <span style="--i:1" data-text="Content Creator">Content Creator</span>
             </h2>
             <p>
-                <p>
-                    passionate about crafting sleek, high-performance web solutions. I turn ideas into reality with <strong>clean code, smart design & business-driven strategies</strong>.
-                </p>
-            
-                <p><strong>Code. Create. Innovate.</strong></p>
+                Passionate about crafting sleek, high-performance web solutions. I turn ideas into reality with
+                <strong>clean code, smart design & business-driven strategies</strong>.
             </p>
+            <p><strong>Code. Create. Innovate.</strong></p>
             <div class="btn-sci">
                 <a href="https://drive.google.com/uc?export=download&id=1FJz2GqOeHEK6EMEbI3poBoznF4R6st7y" download class="btn">Download CV</a>
                 <div class="sci">
@@ -70,14 +58,14 @@
         <div class="home-img">
             <div class="img-box">
                 <div class="img-item">
-                    <img src="image/Home.png">
+                    <img src="image/Home.png" alt="Jannat Ul Ferdous Mollah">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- services section -->
-    <section class="services">
+    <section id="services" class="services">
         <h2 class="heading">My <span>Services</span></h2>
         <div class="services-container">
             <div class="services-box">
@@ -86,7 +74,7 @@
                     <a href="#"><i class='bx bx-arrow-back'></i></a>
                 </div>
                 <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, necessitatibus!</p>
+                <p>Building responsive and dynamic websites using modern technologies and frameworks.</p>
             </div>
 
             <div class="services-box">
@@ -95,7 +83,7 @@
                     <a href="#"><i class='bx bx-arrow-back'></i></a>
                 </div>
                 <h3>App Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, necessitatibus!</p>
+                <p>Creating cross-platform mobile applications with excellent user experience.</p>
             </div>
 
             <div class="services-box">
@@ -104,7 +92,7 @@
                     <a href="#"><i class='bx bx-arrow-back'></i></a>
                 </div>
                 <h3>UI/UX Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, necessitatibus!</p>
+                <p>Designing intuitive and visually appealing user interfaces and experiences.</p>
             </div>
 
             <div class="services-box">
@@ -113,7 +101,7 @@
                     <a href="#"><i class='bx bx-arrow-back'></i></a>
                 </div>
                 <h3>Graphic Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, necessitatibus!</p>
+                <p>Creating compelling visual content for digital and print media.</p>
             </div>
 
             <div class="services-box">
@@ -122,7 +110,7 @@
                     <a href="#"><i class='bx bx-arrow-back'></i></a>
                 </div>
                 <h3>SEO</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, necessitatibus!</p>
+                <p>Optimizing websites to improve their visibility and ranking on search engines.</p>
             </div>
 
             <div class="services-box">
@@ -131,116 +119,51 @@
                     <a href="#"><i class='bx bx-arrow-back'></i></a>
                 </div>
                 <h3>Blockchain</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, necessitatibus!</p>
+                <p>Developing decentralized applications and smart contracts on blockchain platforms.</p>
             </div>
         </div>
     </section>
 
     <!-- resume section -->
-    <section class="resume">
+    <section id="resume" class="resume">
         <div class="resume-container">
             <div class="resume-box">
                 <h2>Why Hire Me?</h2>
-                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, laudantium sint.</p>
-                <button class="resume-btn active">Experience</button>
-                <button class="resume-btn">Education</button>
-                <button class="resume-btn">Skills</button>
-                <button class="resume-btn">About Me</button>
+                <p class="desc">I bring a unique combination of technical expertise, creative problem-solving, and a passion for innovation to every project.</p>
+                <button class="resume-btn active" data-target="experience">Experience</button>
+                <button class="resume-btn" data-target="education">Education</button>
+                <button class="resume-btn" data-target="skills">Skills</button>
+                <button class="resume-btn" data-target="about">About Me</button>
             </div>
 
             <div class="resume-box">
                 <div class="resume-detail experience active">
                     <h2 class="heading">My <span>Experience</span></h2>
-                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nemo aut labore. Non, id tempore hic quasi magni amet earum.</p>
-                    <div class="resume-list">
-                        <div class="resume-item">
-                            <p class="year">2024 - Present</p>
-                            <h3>Full Stack Developer</h3>
-                            <p class="company">Google</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, ea.</p>
-                        </div>
-                        <div class="resume-item">
-                            <p class="year">2022 - 2023</p>
-                            <h3>Backend Developer</h3>
-                            <p class="company">YouTube</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, ea.</p>
-                        </div>
-                        <div class="resume-item">
-                            <p class="year">2021 - 2022</p>
-                            <h3>Frontend Developer</h3>
-                            <p class="company">Abc Corp.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, ea.</p>
-                        </div>
+                    <p class="desc">I have hands-on experience in developing web applications and working with modern technologies.</p>
+                    <div class="resume-list" id="experience-list">
+                        <!-- Experience data will be loaded from JSON -->
                     </div>
                 </div>
 
                 <div class="resume-detail education">
                     <h2 class="heading">My <span>Education</span></h2>
-                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nemo aut labore. Non, id tempore hic quasi magni amet earum.</p>
-                    <div class="resume-list">
-                        <div class="resume-item">
-                            <p class="year">2024</p>
-                            <h3>Programming Course</h3>
-                            <p class="company">Online Course</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sunt.</p>
-                        </div>
-                        <div class="resume-item">
-                            <p class="year">2022 - 2023</p>
-                            <h3>Web Development Bootcamp</h3>
-                            <p class="company">Online Course Platform</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sunt.</p>
-                        </div>
-                        <div class="resume-item">
-                            <p class="year">2020</p>
-                            <h3>Certified Web Development</h3>
-                            <p class="company">Online Course</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sunt.</p>
-                        </div>
+                    <p class="desc">My educational background has provided me with a strong foundation in computer science.</p>
+                    <div class="resume-list" id="education-list">
+                        <!-- Education data will be loaded from JSON -->
                     </div>
                 </div>
 
                 <div class="resume-detail skills">
                     <h2 class="heading">My <span>Skills</span></h2>
-                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nemo aut labore. Non, id tempore hic quasi magni amet earum.</p>
-                    <div class="resume-list">
-                        <div class="resume-item">
-                            <i class='bx bxl-html5'></i>
-                            <span>HTML5</span>
-                        </div>
-                        <div class="resume-item">
-                            <i class='bx bxl-css3'></i>
-                            <span>CSS3</span>
-                        </div>
-                        <div class="resume-item">
-                            <i class='bx bxl-javascript'></i>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="resume-item">
-                            <i class='bx bxl-react'></i>
-                            <span>React.js</span>
-                        </div>
-                        <div class="resume-item">
-                            <i class='bx bxl-vuejs'></i>
-                            <span>Vue.js</span>
-                        </div>
-                        <div class="resume-item">
-                            <i class='bx bxl-tailwind-css'></i>
-                            <span>Tailwind CSS</span>
-                        </div>
-                        <div class="resume-item">
-                            <i class='bx bxl-nodejs'></i>
-                            <span>Node.js</span>
-                        </div>
-                        <div class="resume-item">
-                            <i class='bx bxl-mongodb'></i>
-                            <span>MongoDB</span>
-                        </div>
+                    <p class="desc">I continuously update my skills to stay current with the latest technologies and trends.</p>
+                    <div class="resume-list" id="skills-list">
+                        <!-- Skills data will be loaded from JSON -->
                     </div>
                 </div>
 
                 <div class="resume-detail about">
                     <h2 class="heading">About <span>Me</span></h2>
-                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nemo aut labore. Non, id tempore hic quasi magni amet earum.</p>
+                    <p class="desc">Get to know more about my personal details and professional availability.</p>
                     <div class="resume-list">
                         <div class="resume-item">
                             <p>Name <span>Jannat Ul Ferdous Mollah</span></p>
@@ -285,14 +208,14 @@
     </section>
 
     <!-- portfolio section -->
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <h2 class="heading">Latest <span>Project</span></h2>
         <div class="portfolio-container">
             <div class="portfolio-box">
                 <div class="portfolio-detail active">
                     <p class="numb">01</p>
                     <h3>Frontend Project</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus eum ex suscipit repellat quam vero iusto reprehenderit iure.</p>
+                    <p>A responsive website built with modern frontend technologies, featuring interactive elements and smooth animations.</p>
                     <div class="tech">
                         <p>HTML5, CSS3, JavaScript</p>
                     </div>
@@ -305,7 +228,7 @@
                 <div class="portfolio-detail">
                     <p class="numb">02</p>
                     <h3>Full Stack Project</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus eum ex suscipit repellat quam vero iusto reprehenderit iure.</p>
+                    <p>A complete web application with frontend and backend integration, user authentication, and database management.</p>
                     <div class="tech">
                         <p>MongoDB, Express.js, React.js, Node.js</p>
                     </div>
@@ -318,7 +241,7 @@
                 <div class="portfolio-detail">
                     <p class="numb">03</p>
                     <h3>Frontend Project</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus eum ex suscipit repellat quam vero iusto reprehenderit iure.</p>
+                    <p>A single-page application with dynamic content loading and state management.</p>
                     <div class="tech">
                         <p>React.js, Tailwind CSS</p>
                     </div>
@@ -331,7 +254,7 @@
                 <div class="portfolio-detail">
                     <p class="numb">04</p>
                     <h3>Full Stack Project</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus eum ex suscipit repellat quam vero iusto reprehenderit iure.</p>
+                    <p>An e-commerce platform with product management, shopping cart, and payment integration.</p>
                     <div class="tech">
                         <p>HTML5, Tailwind, JavaScript</p>
                     </div>
@@ -344,7 +267,7 @@
                 <div class="portfolio-detail">
                     <p class="numb">05</p>
                     <h3>Frontend Project</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus eum ex suscipit repellat quam vero iusto reprehenderit iure.</p>
+                    <p>A dashboard interface with data visualization charts and responsive design.</p>
                     <div class="tech">
                         <p>MongoDB, Express.js</p>
                     </div>
@@ -357,7 +280,7 @@
                 <div class="portfolio-detail">
                     <p class="numb">06</p>
                     <h3>Full Stack Project</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus eum ex suscipit repellat quam vero iusto reprehenderit iure.</p>
+                    <p>A social media application with real-time updates, messaging, and media sharing.</p>
                     <div class="tech">
                         <p>Vue.js, Node.js, Express.js</p>
                     </div>
@@ -372,22 +295,22 @@
                 <div class="portfolio-carousel">
                     <div class="img-slide">
                         <div class="img-item">
-                            <img src="image/portfolio1.jpg">
+                            <img src="image/portfolio1.jpg" alt="Project 1">
                         </div>
                         <div class="img-item">
-                            <img src="image/portfolio2.jpg">
+                            <img src="image/portfolio2.jpg" alt="Project 2">
                         </div>
                         <div class="img-item">
-                            <img src="image/portfolio3.jpg">
+                            <img src="image/portfolio3.jpg" alt="Project 3">
                         </div>
                         <div class="img-item">
-                            <img src="image/portfolio4.jpg">
+                            <img src="image/portfolio4.jpg" alt="Project 4">
                         </div>
                         <div class="img-item">
-                            <img src="image/portfolio5.jpg">
+                            <img src="image/portfolio5.jpg" alt="Project 5">
                         </div>
                         <div class="img-item">
-                            <img src="image/portfolio6.jpg">
+                            <img src="image/portfolio6.jpg" alt="Project 6">
                         </div>
                     </div>
                 </div>
@@ -401,11 +324,11 @@
     </section>
 
     <!-- contact section -->
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="contact-container">
             <div class="contact-box">
                 <h2>Let's Work Together</h2>
-                <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam ipsam non impedit provident officia ducimus eos praesentium! At, qui eius.</p>
+                <p class="desc">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
                 <div class="contact-detail">
                     <i class='bx bxs-phone'></i>
                     <div class="detail">
@@ -430,7 +353,7 @@
             </div>
 
             <div class="contact-box">
-                <form action="https://formspree.io/f/xjkgdvay" method="POST">
+                <form id="contact-form" action="https://formspree.io/f/xjkgdvay" method="POST">
                     <h2 class="heading">Contact <span>Me!</span></h2>
                     <div class="field-box">
                         <input type="text" name="name" placeholder="Full Name" required>
@@ -438,11 +361,11 @@
                         <input type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{11}" required>
                         <input type="text" name="subject" placeholder="Email Subject" required>
                         <textarea name="message" placeholder="Your Message" required></textarea>
-                      </div>
-                      <button type="submit" class="btn">Send Message</button>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
                 </form>
 
-                <!-- Add these alert messages -->
+                <!-- Alert messages -->
                 <div class="alert-box">
                     <div class="alert success">Message sent successfully! 🎉</div>
                     <div class="alert error">Failed to send message. Please try again. ❌</div>
